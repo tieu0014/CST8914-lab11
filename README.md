@@ -3,10 +3,10 @@
 According to [w3](https://www.w3.org/WAI/ARIA/apg/patterns/accordion/examples/accordion/) all keyboard functions were supported. Space and enter collapsed and expanded, Tab moved to the next focusable element, Shift + Tab moved to the previous focusable element.
 <img width="652" height="456" alt="image" src="https://github.com/user-attachments/assets/d306f342-ee83-425d-b769-c56c6423dfc8" />
 ## Missing ARIA
-'aria-expanded' attribute was missing from all buttons </br>
-'aria-controls' attribute missing from all buttons </br>
-'aria-role' attribute was missing from all accordian content </br>
-'aria-labelledby' attribute was missing from all accordian content </br>
+`aria-expanded` attribute was missing from all buttons </br>
+`aria-controls` attribute missing from all buttons </br>
+`aria-role` attribute was missing from all accordian content </br>
+`aria-labelledby` attribute was missing from all accordian content </br>
 For this lab the provided JavaScript was modified to use 'aria-expanded' and 'hidden' attributes. But could be replaced with the following code from [w3](https://www.w3.org/WAI/content-assets/wai-aria-practices/patterns/accordion/examples/js/accordion.js):
 ```
 /*
