@@ -7,7 +7,7 @@ According to [w3](https://www.w3.org/WAI/ARIA/apg/patterns/accordion/examples/ac
 'aria-controls' attribute missing from all buttons </br>
 'aria-role' attribute was missing from all accordian content </br>
 'aria-labelledby' attribute was missing from all accordian content </br>
-For this lab JavaScript was modified to use 'aria-expanded' and 'hidden' attributes. But could be replaced with the following code:
+For this lab the provided JavaScript was modified to use 'aria-expanded' and 'hidden' attributes. But could be replaced with the following code from [w3](https://www.w3.org/WAI/content-assets/wai-aria-practices/patterns/accordion/examples/js/accordion.js):
 ```
 /*
  *   This content is licensed according to the W3C Software License at
