@@ -46,7 +46,8 @@ button.accordion.is-open {
   border-left: 1px solid whitesmoke;
   border-right: 1px solid whitesmoke;
   padding: 0 20px;
-  max-height: 0;
+  /* removed styling(replace with hidden) */
+  /* max-height: 0; */
   overflow: hidden;
   transition: max-height 0.2s ease-in-out;
 }

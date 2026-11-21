@@ -13,18 +13,25 @@ const accordionBtns = document.querySelectorAll(".accordion");
 
 accordionBtns.forEach((accordion) => {
   accordion.onclick = function () {
+    //css class style
     this.classList.toggle("is-open");
+    //fix: added aria-expanded toggle to onclick
+    this.ariaExpanded = this.ariaExpanded === "true" ? "false" : "true";
 
     let content = this.nextElementSibling;
     console.log(content);
-
-    if (content.style.maxHeight) {
+    //fix: changed if statement from checking style.maxHeight to checking toggled is-open class
+    if (!this.classList.contains("is-open")) {
+      //fix: removed the max-height css property and replaced it with the hidden attribute
       //this is if the accordion is open
-      content.style.maxHeight = null;
+      //content.style.maxHeight = null;
+      content.setAttribute("hidden", "");
     } else {
+      //fix: removed the max-height css property and replaced it with the hidden attribute
       //if the accordion is currently closed
-      content.style.maxHeight = content.scrollHeight + "px";
-      console.log(content.style.maxHeight);
+      //content.style.maxHeight = content.scrollHeight + "px";
+      //console.log(content.style.maxHeight);
+      content.removeAttribute("hidden");
     }
   };
 });
